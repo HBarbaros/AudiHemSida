@@ -63,6 +63,7 @@ body {
     display: none;
     font-size: 22px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .hero {
@@ -128,7 +129,9 @@ body {
 
     .mobile-menu-toggle {
         display: block;
-        margin-left: auto;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: 10px;
     }
 
     .nav-links {
