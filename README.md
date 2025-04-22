@@ -64,3 +64,6 @@ Skärmdumpar från originalhemsidan finns i mappen `screenshots/`.
 - [x] Sidan är responsiv – elementen stannar kvar i bild
 - [x] Färger, storlekar och avstånd är liknande originalet
 - [x] Inlämning sker i tid
+
+
+hej hej hej hej
