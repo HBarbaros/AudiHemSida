@@ -10,6 +10,8 @@
 ## 📝 Beskrivning
 I det här projektet har vi valt att återskapa startsidan för **Audi.com**. Fokus har varit på att efterlikna sidans **struktur**, **design** och **responsivitet** enligt instruktionerna för Inlämningsuppgift 1 i kursen Webbutveckling.
 
+HEJ DET ÄR MAX
+
 Vi har återskapat följande delar från originalhemsidan:
 
 - Header med logotyp och meny
