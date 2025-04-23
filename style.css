@@ -221,3 +221,103 @@ body {
     }
 }
 
+.news-section {
+    padding: 4rem var(--one-header-side-spacing);
+    background-color: #fff;
+}
+
+.news-section h2 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.news-card {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-content {
+    padding: 1rem 0.5rem 0.5rem;
+}
+
+.news-date {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.news-content h3 {
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    color: #000;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.25px;
+}
+
+.news-content a {
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 0.25px;
+    position: relative;
+}
+
+.news-content a::after {
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1rem;
+    transition: margin-left 0.2s ease;
+}
+
+.news-content a:hover::after {
+    margin-left: 6px;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+
+.news-section h2,
+.news-content h3,
+.news-content p,
+.news-date,
+.news-content a,
+.disclaimer {
+    font-family: 'Audi Type', sans-serif;
+}
