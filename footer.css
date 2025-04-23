@@ -6,6 +6,15 @@
     font-size: 0.9rem;
 }
 
+.audi-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.audi-footer a:hover {
+    color: #ccc;
+}
+
 .footer-top {
     display: flex;
     flex-direction: column;
