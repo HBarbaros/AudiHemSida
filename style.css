@@ -48,7 +48,7 @@
 /* GENERAL BODY STYLES          */
 /* ============================= */
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Audi Type', sans-serif;
     background-color: #fff;
     color: #000;
     font-size: 16px;
@@ -397,7 +397,7 @@ body {
 
 
 
-    /* FOOTER */
+/* FOOTER */
 .audi-footer {
     background-color: #000;
     color: #fff;
@@ -487,5 +487,3 @@ body {
         text-align: left;
     }
 }
-
-      
