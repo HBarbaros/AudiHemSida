@@ -110,10 +110,12 @@
      flex-direction: row;
      border-bottom: 1px solid #333;
      padding-bottom: 12px;
+     
  }
 
  .footer-social span:hover {
      background-color: #4c4c4c;
+     transition: ease-in-out 0.25s
  }
 
  .footer-links {
