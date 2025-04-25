@@ -30,7 +30,8 @@ Audi.com innehåller mycket dynamiskt och upprepande innehåll. För att hinna m
 Projektmappen innehåller:
 
 - `index.html` – strukturen för sidan
-- `style.css` – all styling
+- `style.css` – Del av styling
+- `footer.css` - Del av styling, för att undvika konflikter
 - `README.md` – denna fil
 - `screenshots/` – mapp med skärmdumpar från originalhemsidan
 

@@ -222,4 +222,10 @@
          border-bottom: 0;
      }
 
+     .footer-social {
+        justify-content: flex-end;
+     }
+
+   
+
  }
