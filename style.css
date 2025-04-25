@@ -14,12 +14,9 @@
     --one-header-color-white: #ffffff;
     --one-header-color-black: #000000;
     --one-header-color-grey: #808080;
-
-    /* Default (mobile) */
     --one-header-side-spacing: 16px;
 }
 
-/* Responsive spacing updates */
 @media (min-width: 375px) {
     :root {
         --one-header-side-spacing: 28px;
@@ -45,7 +42,7 @@
 }
 
 /* ============================= */
-/* GENERAL BODY STYLES          */
+/* GENERAL BODY STYLES           */
 /* ============================= */
 body {
     font-family: 'Audi Type', sans-serif;
@@ -55,7 +52,7 @@ body {
 }
 
 /* ============================= */
-/* HEADER STYLES                */
+/* HEADER STYLES                 */
 /* ============================= */
 .audi-header {
     display: flex;
@@ -84,7 +81,6 @@ body {
     list-style: none;
 }
 
-
 .nav-links a {
     text-decoration: none;
     font-size: 18px;
@@ -104,7 +100,6 @@ body {
     transform: scale(0.95);
 }
 
-/* Hamburger (mobile) */
 .mobile-menu-toggle {
     display: none;
     align-items: center;
@@ -114,18 +109,19 @@ body {
 }
 
 /* ============================= */
-/* HERO SECTION                 */
+/* HERO SECTION (DESKTOP)        */
 /* ============================= */
 .hero {
     background-image: url('images/hero-tech.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    height: 81.2vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    /* Desktopta tam ekran görünüm */
     min-height: 480px;
-    max-height: 720px;
+    max-height: 640px;
     position: relative;
     color: rgb(255, 255, 255);
     padding: 0 var(--one-header-side-spacing) 80px;
@@ -140,9 +136,7 @@ body {
 }
 
 .hero-content {
-    position: absolute;
-    bottom: 40px;
-    left: var(--one-header-side-spacing);
+    position: relative;
     z-index: 2;
     max-width: 1000px;
 }
@@ -152,6 +146,8 @@ body {
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 30px;
+    word-break: break-word;
+    text-align: left;
 }
 
 .cta-button {
@@ -170,24 +166,63 @@ body {
 }
 
 /* ============================= */
-/* RESPONSIVE STYLES            */
+/* RESPONSIVE HERO BEHAVIOR      */
+/* ============================= */
+
+/* ✅ 1023px ve altı: Dikey büyüyen hero */
+@media (max-width: 1023px) {
+    .hero {
+        height: auto;
+        min-height: 720px;
+        padding-bottom: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        max-width: 90%;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 18px 0;
+        font-size: 18px;
+    }
+}
+
+/* Daha küçük cihazlar için yazı küçültme */
+@media (max-width: 589px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 459px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 411px) {
+    .hero h1 {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+}
+
+/* ============================= */
+/* HEADER RESPONSIVE             */
 /* ============================= */
 @media (max-width: 1439px) {
     .audi-header {
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 0 16px;
-        height: 72px;
-        position: relative;
     }
 
     .mobile-menu-toggle {
         display: flex;
-        align-items: center;
         gap: 6px;
         font-size: 18px;
-        cursor: pointer;
     }
 
     .logo {
@@ -197,9 +232,7 @@ body {
     }
 
     .search-icon {
-        display: flex;
-        font-size: 18px;
-        opacity: 0.75;
+        display: none;
     }
 
     .nav-links {
@@ -221,6 +254,9 @@ body {
     }
 }
 
+/* ============================= */
+/* NEWS SECTION                  */
+/* ============================= */
 .news-section {
     padding: 4rem var(--one-header-side-spacing);
     background-color: #fff;
