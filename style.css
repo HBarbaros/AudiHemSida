@@ -119,7 +119,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
-    /* Desktopta tam ekran görünüm */
     min-height: 480px;
     max-height: 640px;
     position: relative;
@@ -169,7 +168,6 @@ body {
 /* RESPONSIVE HERO BEHAVIOR      */
 /* ============================= */
 
-/* ✅ 1023px ve altı: Dikey büyüyen hero */
 @media (max-width: 1023px) {
     .hero {
         height: auto;
@@ -199,7 +197,6 @@ body {
     }
 }
 
-/* Daha küçük cihazlar için yazı küçültme */
 @media (max-width: 589px) {
     .hero h1 {
         font-size: 1.9rem;
