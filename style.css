@@ -363,3 +363,227 @@ body {
 .disclaimer {
     font-family: 'Audi Type', sans-serif;
 }
+
+/* ============================= */
+/* NEWS SECTION -                */
+/* ============================= */
+.news-section {
+    padding: 2rem var(--one-header-side-spacing);
+    background-color: #fff;
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Audi Type', sans-serif;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.news-card {
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.news-content {
+    padding: 0;
+}
+
+.news-date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.news-content h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    color: #222;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+    font-family: 'Audi Type', sans-serif;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.1px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.news-content a {
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #007aff;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    position: relative;
+    font-family: 'Audi Type', sans-serif;
+}
+
+.news-content a::after {
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1rem;
+    transition: margin-left 0.2s ease;
+}
+
+.news-content a:hover::after {
+    margin-left: 4px;
+}
+
+.disclaimer {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 0.7rem;
+    line-height: 1.4;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* ============================= */
+/* NEWS SECTION - TABLET (768px+)*/
+/* ============================= */
+@media (min-width: 768px) {
+    .news-section {
+        padding: 3rem var(--one-header-side-spacing);
+    }
+
+    .news-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .news-card {
+        margin-bottom: 2.5rem;
+        padding: 0;
+    }
+
+    .news-card img {
+        margin-bottom: 1.2rem;
+    }
+
+    .news-content {
+        padding: 0;
+    }
+
+    .news-date {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .news-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .news-content p {
+        font-size: 1.05rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .news-content a {
+        font-size: 1.05rem;
+    }
+
+    .news-content a::after {
+        font-size: 1.05rem;
+    }
+
+    .disclaimer {
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================= */
+/* NEWS SECTION - DESKTOP (1440px+)*/
+/* ============================= */
+@media (min-width: 1440px) {
+    .news-section {
+        padding: 4rem var(--one-header-side-spacing);
+    }
+
+    .news-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .news-card {
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+
+    .news-card img {
+        margin-bottom: 1.5rem;
+    }
+
+    .news-content {
+        padding: 0;
+    }
+
+    .news-date {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .news-content h3 {
+        font-size: 1.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .news-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .news-content a {
+        font-size: 1.1rem;
+    }
+
+    .news-content a::after {
+        font-size: 1.1rem;
+    }
+
+    .disclaimer {
+        font-size: 0.85rem;
+    }
+}
