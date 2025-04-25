@@ -443,7 +443,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    color: #007aff;
+    color: #000;
     font-size: 1rem;
     letter-spacing: 0.1px;
     position: relative;
